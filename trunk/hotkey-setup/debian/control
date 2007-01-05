@@ -1,0 +1,15 @@
+Source: hotkey-setup
+Section: misc
+Priority: optional
+Maintainer: Matthew Garrett <mjg59@srcf.ucam.org>
+Build-Depends: debhelper (>= 4.0.0), linux-kernel-headers (>= 2.6.11)
+Standards-Version: 3.6.1
+
+Package: hotkey-setup
+Architecture: i386 amd64
+Depends: dmidecode (>= 2.7)
+Conflicts: tpb
+Description: auto-configures laptop hotkeys
+ This package will attempt to auto-detect your laptop hardware and then
+ configure its hotkeys to produce useful keycodes. These can then be used by
+ userspace applications.

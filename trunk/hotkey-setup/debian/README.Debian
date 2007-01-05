@@ -1,0 +1,13 @@
+hotkey-setup for Debian
+-----------------------
+
+ hotkey-setup is a trivial init script that uses DMI information to attempt
+ to detect the type of laptop in use. It then uses this information to bind
+ keyboard scancodes to keycodes. The keycodes used are (in general) the same
+ as those used on Microsoft keyboards.
+
+ Note: This package does not (on its own) cause the hotkeys to do anything.
+ It merely makes them available to userspace programs. In Gnome, they can be
+ bound to useful functionality by using the keyboard shortcuts applet.
+
+ -- Matthew Garrett <mjg59@srcf.ucam.org>, Thu, 28 Jul 2005 15:16:34 +0100

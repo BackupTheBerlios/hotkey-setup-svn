@@ -1,0 +1,7 @@
+hotkey-setup (0.1-11) unstable; urgency=low
+
+This release changes some of the default hotkeys, and so may require 
+reconfiguration of some applications. This is to bring it in line with 
+the scancodes defined in /usr/include/linux/input.h.  
+
+ -- Matthew Garrett <mjg59@srcf.ucam.org>  Fri,  6 Jan 2006 17:15:50 +0000
