@@ -1,0 +1,132 @@
+#format cplusplus
+/* 
+This table is still unfinished! But is contains support for keycodes 
+that just made it into the kernel.
+
+TODO:
+ * get the meaning for the last few unclear linux keycodes
+ * find proper range for the numerical values and assign values
+  * better grouping/order
+ * prefixes (like XF86) needed? and for which keysyms
+ * CamelCase vs. Capitalized_With_Underscores
+*/
+
+
+/* Unclear meaning (all from remote control) */
+#define XK_                  /* ANGLE - other camera position, different video stream */
+#define XK_                  /* ARCHIVE */
+#define XK_                  /* ISO */
+#define XK_                  /* MODE */
+#define XK_                  /* SCREEN */
+#define XK_                  /* QUESTION */
+
+#define XK_Macro             /* MACRO */
+#define XK_Media_Power_Off   /* POWER2 C- (rotate ccw) on remote controls */
+
+#define XK_Keyboard_Light_Down   /* KBDILLUMDOWN */
+#define XK_Keyboard_Light_Up     /* KBDILLUMUP */
+#define XK_Keyboard_Light_Toggle /* KBDILLUMTOGGLE */
+#define XK_Battery           /* BATTERY */
+
+/* Teletext control/Game pad buttons */
+#define XK_Red_Button        /* RED */
+#define XK_Green_Button      /* GREEN */
+#define XK_Yellow_Button     /* YELLOW */
+#define XK_Blue_Button       /* BLUE */
+
+#define XK_Network           /* CONNECT */
+#define XK_Blue_Tooth        /* BLUETOOTH */
+#define XK_WLAN              /* WLAN */
+
+#define XK_Cycle_Windows     /* CYCLEWINDOWS - how related to alt tab???? */
+
+/* Advanced editing */
+#define XK_Delete_End_Of_Line   /* DEL_EOL */
+#define XK_Delete_End_Of_Screen /* DEL_EOS */
+#define XK_Insert_Line          /* INS_LINE */
+#define XK_Delete_Line          /* DEL_LINE */
+
+#define XK_ZoomIn               /* ZOOMIN */
+#define XK_ZoomOut              /* ZOOMOUT */
+#define XK_Zoom_Reset           /* ZOOMRESET */
+
+#define XK_Delete_File          /* DELETEFILE */
+#define XK_File                 /* FILE  ??? */
+#define XK_Directory            /* DIRECTORY show file system ??? */
+
+#define XK_Function_Key         /* FN - Function key implement as modifier??? */
+
+/* Function key combinations that produce their own key press event.
+   
+May be let mapping them to something useful to the user as they 
+don't carry semantic information.
+
+FN_ESC, FN_B, FN_D, FN_E, FN_F, FN_S
+
+FN_F1, FN_F2, FN_F3, FN_F4, FN_F5, FN_F6, 
+FN_F7, FN_F8, FN_F9, FN_F10, FN_F11, FN_F12
+*/
+
+#define XK_Information         /* INFO [i] */
+#define XK_Keyboard            /* KEYBOARD - show onscreen keyboard */
+#define XK_Digits              /* DIGITS   - show onscreen num pad */
+#define XK_Language            /* LANGUAGE - show language selection */
+
+/* Media */ 
+#define XK_Shuffle             /* SHUFFLE */
+#define XK_FastForward         /* FASTFORWARD */
+#define XK_Restart             /* RESTART */
+
+#define XK_Close_CD            /* CLOSECD      may be just use XF86Eject */
+#define XK_Eject_Close_CD      /* EJECTCLOSECD may be just use XF86Eject */
+
+/* Remote Control, switch to other source */
+/* XXX may be use a common prefix for them; "Media_" ??? */
+#define XK_Media_Source        /* AB */
+#define XK_Audio               /* AUDIO */
+#define XK_Aux                 /* AUX */ 
+#define XK_DVD                 /* DVD */
+#define XK_PC                  /* PC */
+#define XK_Player              /* PLAYER */
+#define XK_Hard_Disk_Recorder  /* PVR */
+#define XK_Media_Home_Platform /* MHP */
+#define XK_Radio               /* RADIO */
+#define XK_Tape                /* TAPE */
+#define XK_Sat_Reciever        /* SAT */
+#define XK_SAT_Reciever_2      /* SAT2 */
+#define XK_Video_Text          /* TEXT */
+#define XK_Tuner               /* TUNER */
+#define XK_Tele_Vision         /* TV */
+#define XK_Tele_Vision_2       /* TV2 */
+#define XK_Video_Recorder      /* VCR */       
+#define XK_Video_Recorder_2    /* VCR2 */
+#define XK_Program_Guide       /* EPG */
+#define XK_Voice_Mail          /* VOICEMAIL */
+#define XK_Video_Phone         /* VIDEOPHONE */
+
+/* Menu navigation */
+#define XK_List                 /* LIST (Channels, Menu items, ...) */
+#define XK_OK                   /* OK */
+#define XK_First                /* FIRST */
+#define XK_Last                 /* LAST */
+
+/* Media Center control */
+#define XK_Channel              /* CHANNEL */
+#define XK_Channel_Down         /* CHANNELDOWN */
+#define XK_Channel_Up           /* CHANNELUP */
+#define XK_Channel_Ten          /* TEEN */
+#define XK_Channel_Twenty       /* TWEN */
+
+#define XK_Time                 /* TIME */
+#define XK_Title                /* TITLE */
+#define XK_SubTitle             /* SUBTITLE */
+#define XK_Zoom                 /* ZOOM toogle/show slider */
+#define XK_Bass_Boost           /* BASSBOOST */
+
+/* Applications */
+#define XK_AddressBook          /* ADDRESSBOOK */
+#define XK_XF86Editor           /* EDITOR */
+#define XK_XF86GraphicsEditor   /* GRAPHICSEDITOR */
+#define XK_XF86Presentation     /* PRESENTATION */
+#define XK_XF86Database         /* DATABASE */
+#define XK_XF86Sport            /* SPORT see XF86Finance, XF86Shop, ... */ 

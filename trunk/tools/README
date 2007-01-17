@@ -1,0 +1,35 @@
+Tools for handling hotkeys
+==========================
+
+ * writekeymaps.py reads in keyboard seetting from various sources and 
+   generates hotkey-setup compatible keyboard maps
+ * xkbd_evdev.py writes out xkbd keycodes table for the evdev driver
+ * xkbd_linux_symbols.py writes out xkbd symbol tables for kbd and evdev driver
+ * xkb_alias.py speaking aliases for evdev keycodes - doesn't work - obsolete
+ 
+  
+
+Libraries
+=========
+
+hotkeys.py
+----------
+
+Hold classes and tables with names of keys in X11 and kernel/console level and
+convertions between them.
+
+readers/
+--------
+
+Contains modules to read files from various projects that deal with hotkeys:
+
+ * hotkeysetup.py http://developer.berlios.de/projects/hotkey-setup/ or 
+   ../hotkey-setup
+ * keytouch.py http://keytouch.sourceforge.net/index.php
+ * lineak.py http://lineak.sourceforge.net/
+ * xkbd.py X11 configuration 
+   http://freedesktop.org/wiki/Software_2fXKeyboardConfig
+
+The these modules are used by writekeymaps.py. To make lineak and keytouch 
+work you need symbolic links to the directory containing the lineakkb.def and
+the keytouch keyboard files names lineakd and keytouch in this directory.
